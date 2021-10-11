@@ -1,0 +1,81 @@
+body {
+    background-image: url("image/backgroundd.png");
+    background-position: top right  ; 
+    background-repeat:no-repeat ;
+    background-size: 300px 300px ;
+ 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8a8653;
+}
+ul {
+    list-style: square;
+}
+ol {
+    list-style: upper-roman;
+}
+ul ol {
+    list-style: lower-roman;
+}
+ol ol {
+    list-style: lower-roman;
+}
+
+/* link */
+a:link {
+    text-decoration: none;
+    color: red;
+}
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover,a:active {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: green;
+}
+a:active {
+    color: black;
+}
+
+.sa-one {
+    font-size: 1rem;
+    font-family: cursive;
+    color: #3d6439;
+}
+.sa-two {
+    font-size: 1rem;
+    font-family: Fantasy;
+    color: #467a57;
+}
+.sa-three{
+    font-size: 1.2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #9ba193;
+}
+    .sa-four {
+        font-size: 1.2rem;
+        font-family: "Lucida Console", "Courier New", monospace;
+        color: #9bac83;}
+
+.sa-last
+{
+    font-size: 1.2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #737e62;
+}
+
+#h h1{
+    border: 7px solid rgb(124, 167, 80);
+    margin: 20px;
+    padding: 9px; 
+    
+    }
+
+
+
