@@ -1,21 +1,33 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- JS files -->
-    <script src="app.js"></script>
-</head>
-<body>
-    <div class="container">
-        <h1>BMI Calculator Creat Useing JavaScript</h1>
+    <body>
+    <h1>BMI Calculator Creat Useing JavaScript</h1>
+    <p>Your Height (cm)  <input type="text" id="height"><br><br> 
+       Your Weight (kg) <input type="text" id="weight"> </p>
 
-        
-        <p>Your Height (cm)
-        <input type="text" id="height">
-        <p> Your Weight (kg)
-        <input type="text" id="weight"> <br><br>
-        <button id="btn">Calculate</button>
-        <div id="result"> </div>
-    </div>    
+       <input type="submit" value="Calculate BMI " onclick="FindBMI();">
+       <p>your BMI: <span id="BMIa" ></span></p>
+       <p> this meaans your BMI : <span id="weightC"></span> </p>
+
 </body>
-  
 </html>
+<script>
+
+function FindBMI(){
+var height = document.getElementById("height").value;
+var weight = document.getElementById("weight").value;
+var BMI =(weight*10000)/(height*height);
+document.getElementById("BMIa").innerText=BMI;
+
+if (BMI < 18.5) 
+document.getElementById("weightC").innerText = "that you are UnderWeight." ;
+           
+    else if (BMI >= 18.5 && BMI < 24.9) 
+document.getElementById("weightC").innerText = "that you are healthy." ;
+    
+else if (BMI >= 25 && BMI <= 24.9) 
+document.getElementById("weightC").innerText = "that you are overWeight ." ;
+}
+</script>
+
