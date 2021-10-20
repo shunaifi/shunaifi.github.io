@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> dark and light mode </title>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+#f {
+
+    font-family:serif;
+    ;
+}
+#h {  font-size: 5rem;
+  font-family: cursive;
+}
+
+</style>
+</head>
+<body>
+<button onclick="myFunction1()">Dark mode</button>
+<button onclick="myFunction2()">Light mode</button>
+<h2 id="h">this is heading 1 </h2>
+<p id="f" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+    remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+
+<script>
+function myFunction1() {
+   var element1 = document.body;
+   element1.classList.toggle("dark-mode");
+}
+
+function myFunction2() {
+   var element2 = document.body;
+   element2.classList.toggle("light-mode");
+}
+
+</script>
+</body>
+</html>

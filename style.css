@@ -8,9 +8,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #8a8653;
+ 
 }
 ul {
     list-style: square;
+    
+   
 }
 ol {
     list-style: upper-roman;
@@ -30,6 +33,7 @@ a:link {
 a:visited {
     text-decoration: none;
     color: blue;
+    
 }
 
 a:hover,a:active {

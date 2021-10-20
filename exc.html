@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script> function faildateform() {
+
+   var fn =document.getElementById("te1")
+   if (fn = do)
+   function CheckPassword(inputtxt) 
+{ 
+var passw=  /^[A-Za-z]\w{7,14}$/;
+if(inputtxt.value.match(passw)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Wrong...!')
+return false;
+}
+} }
+    </script>
+     <title>  Form Vaildation </title>          
+
+    </head>
+    <body>
+        <label for="Fullname">fall Name:</label>
+        <input type="text" id="Fullname" fname="fn" > <br><br>
+        <label for="username">fall Name:</label>
+        <input type="text" id="username" fname="un" > <br><br>
+        <label for="userPassword">Password: </label>
+        <input id="userPassword" type="password"> <br><br>
+        <label for="CuserPassword">confirm Password: </label>
+        <input id="CuserPassword" type="password"> <br><br>
+        <input type="submit" value="sign up">
+    </body>
+</html> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include JS files -->
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator Creat Useing JavaScript</h1>
+
+        
+        <p>Your Height (cm)
+        <input type="text" id="height">
+        <p> Your Weight (kg)
+        <input type="text" id="weight"> <br><br>
+        <button id="btn">Calculate</button>
+        <div id="result"> </div>
+    </div>    
+</body>
+  
+</html>

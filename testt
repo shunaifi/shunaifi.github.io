@@ -1,0 +1,48 @@
+<div class="modal" id="callback" tabindex="-1" role="dialog" role="dialog" aria-labelledby="callback" aria-hidden="true">
+    <div class="modal-dialog modal-callback" role="document">
+    <div class="modal-content">
+    <div class="modal-content">
+    <form class="form_callback">
+    
+    <!-- Required Hidden Fields -->
+    <input type="hidden" name="project_name" value="Site.ru">
+    <input type="hidden" name="admin_email" value="mail@mail.ru">
+    <input type="hidden" name="form_subject" value="Request from website">
+    <!-- END Hidden Required Fields -->
+    
+    <input type="hidden" name="Page" value="">
+    
+    <div class="success" >
+    <div class="modal-header">
+    <h5 class="modal-title">Sawka sent</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <div class="succes-description">some text</div>
+    </div>
+    </div>
+    
+    <div class="modal-header no-send">
+    <h5 class="modal-title">Request a call</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body no-send">
+    <input class="input-phone" type="phone" name="Phone" placeholder="Phone number" required>
+    <input class="input-name" type="text" name="Name" placeholder="Name" required>
+    <div class="agreement">privacy Policy</div>
+    
+    <a href="">
+        <input type="submit"/>
+       </a>
+   <button class="callback btn btn-danger form-submit" type="submit">Request a call</button> 
+    </div>
+    
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
