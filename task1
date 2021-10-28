@@ -22,8 +22,6 @@ body {
     font-family:fantasy;
 }
 #h {  font-size: 5rem;
-    font-family:fantasy;
-}
   }
 </style>
 </head>

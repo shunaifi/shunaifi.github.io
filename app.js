@@ -32,40 +32,16 @@ function calculateBMI() {
   
        
         if (bmi < 18.6) result.innerHTML =
-            `<span>${bmi}</span> <br>
-            that you are Under Weight. `;
+            `your BMI: <span>${bmi}</span> <br>
+            this meaans your BMI : that you are Under Weight. `;
   
         else if (bmi >= 18.6 && bmi < 24.9) 
             result.innerHTML = 
-                `<span>${bmi}</span> <br>
-                that you are healthy. `;
+                `your BMI: <span>${bmi}</span> <br>
+                 this meaans your BMI : that you are healthy. `;
   
         else result.innerHTML =
-            `<span>${bmi}</span> <br>
-            that you are Over Weight. `;
+            `your BMI: <span>${bmi}</span> <br>
+            this meaans your BMI : that you are Over Weight. `;
     }
-    <!DOCTYPE html>
-<html>
-<head>
-    <!-- JS files 
-    <script src="app.js"></script>
-</head>
-<body>
-    <div class="container">
-        <h1>BMI Calculator Creat Useing JavaScript</h1>
-
-        
-        <p>Your Height (cm)
-        <input type="text" id="height">
-        <p> Your Weight (kg)
-        <input type="text" id="weight"> <br><br>
-        <button id="btn">Calculate</button>
-        <div id="result"> </div>
-    </div>    
-            your BMI:<span>id="height" </span><br>
-            this meaans your BMI : 
-</body>
-  
-</html>
---></input>
 }
