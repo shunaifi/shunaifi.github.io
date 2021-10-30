@@ -1,82 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            FORM SIGN UP
-        </title>
-        </head>
-<script>
-function validation()
-{
-               document.getElementById('v_name').style.display='none';
-               document.getElementById('v_uname').style.display='none';
-               document.getElementById('not_uname_validate_password').style.display='none';
-               document.getElementById('length_validate_password').style.display='none';
-               document.getElementById('format_validate_password').style.display='none';
-               document.getElementById('validate_cnfrm_password').style.display='none';
-var cond1 = /^[A-Za-z]+$/
-               var cond2 = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/;
-if(document.getElementById('name').value.length!=0)
-{
-if(cond1.test(document.getElementById('name').value) == false)
-{
-document.getElementById('v_name').style.display='block';
-}
-}
-if(document.getElementById('uname').value.length==0)
-{
-document.getElementById('v_uname').style.display='block';
-}
-if(document.getElementById('password').value==document.getElementById('uname').value)
-{
-document.getElementById('not_uname_validate_password').style.display='block';
-}
-               else if(document.getElementById('password').value.length<6||document.getElementById('password').value.length>10)
-               {
-                   document.getElementById('length_validate_password').style.display='block';
-               }
-               else if(cond2.test(document.getElementById('password').value)==false)
-               {
-                   document.getElementById('format_validate_password').style.display='block';
-               }
-if(document.getElementById('password').value!=document.getElementById('cnfrm_password').value)
-{
-document.getElementById('validate_cnfrm_password').style.display='block';
-}
-}
-</script>
-       <body>
-        <h1>SIGN UP</h1>
-<form>
-<label>Full name:</label><br>
-<input type="text" id="name" value="">
-<label id="v_name" style="display:none;color:red">Only latters are allowed</label>
-  
-           <br>
-  
-           <label>User name:</label><br>
-<input type="text" id="uname" value="">
-<label id=v_uname style="display:none;color:red">User name must be filled</label>
-  
-<br>
-  
-<label>Password:</label><br>
-<input type="text" id="password" value="">
-<label id=length_validate_password style="display:none;color:red">Password must be 6-10 letter</label>
-<label id=format_validate_password style="display:none;color:red">Must contain atleast one small letter, one capital letter and one digit</label>
-<label id=not_uname_validate_password style="display:none;color:red">Password must not be username</label>
-  
-           <br>
-  
-<label>Confirm Password:</label><br>
-<input type="text" id="cnfrm_password" value="">
-<label id="validate_cnfrm_password" style="display:none;color:red">Confirm Password must be same as password</label>
 
-<br><br>
-  
-<input type="button" onclick='validation()' value="SIGN UP ">
-</form>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Dark Mode</title>
+	
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	
+	<style>
+		body{
+		text-align:left;
+		}
+		
+		h1{
+		color: #e9ae30;
+        font-family:Georgia, 'Times New Roman', Times, serif
+		}
+		.mode {
+			float:left ;
+		}
+		.EXchange {
+			cursor: pointer;
+            color :rgb(119, 94, 74)
+		}
+		.night_shift{
+			background-color: #222;
+			color: #e6e6e6;
+		}
+   
+
+	</style>
+</head>
+
+<body>
+    <div class="mode">
+        <button class="EXchange">dark</button>
+    </div>
+		
+
+    <br>   <br> 
+    <h1><em>do jquery in dark and light mode ....</em></h1>
+		
+<p id="p">
+   
+    <img src= "image/meme.png"  width="150" height="150" />  
+		</p>
+
+	<script>
+
+        
+		$( ".EXchange" ).on("click", function() 
+              // change to dark
+        {
+			if( $( "body" ).hasClass( "night_shift" )) {
+				$( "body" ).removeClass( "night_shift" );
+				$( ".EXchange" ).text( "dark" );
+			} 
+        
+            // exchange to light
+            else {
+				$( "body" ).addClass( "night_shift" );
+				$( ".EXchange" ).text( "light" );
+			}
+		});
+	</script>
 </body>
+
 </html>
 
 
